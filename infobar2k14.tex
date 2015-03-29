@@ -225,7 +225,7 @@ Enfin, il y a certains aliments que ton bar ne fera pas payer et dits \enquote{e
 
 Compliqué ? Un peu, mais quand tu comprendras un peu mieux la problématique de la gestion des aliments dans un bar d'étage tu t'apercevras que c'est une solution tout à fait viable, et meilleure que celle qui existait dans l'ancien site bar.
 
-\subsubsection{Ajouter un aliment à la vente}
+\subsubsection{Ajouter un aliment à la vente\label{ajout}}
 
 Avant de pouvoir rentrer une appro dans Chocapix, il faut d'abord créer les aliments que ton bar vendra. Pour cela, va dans \menu{Administration>Aliments>Ajouter un aliment} et suis les étapes suivantes :
 \begin{enumerate}
@@ -273,6 +273,8 @@ Pour que les quantités affichées sur Chocapix soient reliées à la réalité 
 
 Pour cela, va dans \menu{Administration>Aliments>Faire un inventaire} et rentre un à un les produits achetés présents dans ton bar d'étage en scannant leur code-barre ou en recherchant leur nom.
 
+Tu as aussi accès à \menu{Administration>Aliments>Ajouter une aliment}, au cas où il y ait un aliment non répertorié dans ton inventaire. Regarde la section \ref{ajout} pour savoir comment faire.
+
 \subsection{Respo news}
 
 Le respo news est chargé de la communication des respos bars aux autre membres de la section. Cela peut se faire par mail section mais Chocapix offre plusieurs possibilités pour informer les gens sans les spammer.
@@ -296,7 +298,7 @@ Ainsi l'indicateur \enquote{sur le compte bancaire du bar (théorique)} \menu{Ad
 
 \paragraph{Matériel et dépenses communes} Lorsque tu engages une dépense commune comme l'achat de matériel ou l'organisation d'une bouffe section, il y a deux choses à faire :
 \begin{enumerate}
-	\item indiquer la somme exacte dépensée dans \menu{Administration>Comptabilité>?} ;%TODO
+	\item indiquer la somme exacte dépensée dans \menu{Administration>Comptabilité>Logguer du matériel} ;
 	\item faire payer la somme par les membres de la section dans \menu{Administration>Utilisateurs>Paiement collectif}.
 \end{enumerate}
 
@@ -306,8 +308,7 @@ Les deux autres options \enquote{Retirer de l'argent} et \enquote{Mettre une ame
 
 \paragraph{Aggios} Dans \menu{Administration>Paramètres}, tu peux régler l'indicateur de solde bas pour tous les utilisateurs du bar et aussi activer les agios pour inciter ceux qui ont des comptes en négatif à les approvisonner. Tu peux aussi définir la formule de calcul des agios.
 
-\paragraph{Dépenses et recettes} Tu peux aussi rentrer des dépenses et recettes pour le compte du bar d'étage dans \menu{Administration>Comptabilité>?}.%TODO
-Toutes ces dépenses et recettes doivent être celles qui sont marquées sur ton relevé de compte en ligne sur le site de ta banque, sauf les appros (qui sont gérées via l'appro d'aliments et le montant des produits en open) et les dépenses liées à ELSE (voir plus bas).
+\paragraph{Dépenses et recettes} Tu peux afficher les dépenses et recettes pour le compte du bar d'étage dans \menu{Administration>Comptabilité>Compte bancaire}. Toutes ces dépenses et recettes doivent être celles qui sont marquées sur ton relevé de compte en ligne sur le site de ta banque, sauf les appros (qui sont gérées via l'appro d'aliments et le montant des produits en open) et les dépenses liées à ELSE (voir plus bas). Tu peux aussi rajouter manuellement une dépense ou une recette qui osrt de l'ordinaire des appros : voyages section, activités cohésion, pulls section, etc.
 
 \paragraph{ELSE} Si ton bar possède un compte chez ELSE, il y a une petite subtilité supplémentaire. En effet ton bar possède un solde chez ELSE, qui n'est pour l'instant pas géré par Chocapix. Ainsi il est conseillé de procéder comme il suit :
 \begin{enumerate}
