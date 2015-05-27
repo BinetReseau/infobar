@@ -5,24 +5,15 @@
 \usepackage{lmodern}
 \usepackage[french]{babel}
 \usepackage{graphicx,csquotes,textcomp}
-\usepackage[coverpage,fancysections]{polytechnique}
+\usepackage[titlepage,fancysections]{polytechnique}
 \usepackage{url,menukeys}%Menukeys c'est pour les séquences de menu et les touches de clavier.
-\usepackage[hidelinks=true]{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%%Ce qui suit sert à mettre le logo de Chocapix plus gros sur la première page
-\renewcommand{\polylogosup}{%On redefinit la variable
-\includegraphics[height=1.5\hauteurlogohori]{\polylogohori}%Avec le logo horizontal de l'X
-	\hspace{0.05\textwidth}
-	\includegraphics[height=1.5\hauteurlogovert,
-		width=2.2\largeurlogohori,
-		keepaspectratio]{logo}%Et le logo personnalise pas trop gros
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[hidelinks]{hyperref}
 
 \title{InfoBar}
 \subtitle{Fonctionnement des bars d'étage\\Petit guide à l'utilisation de Chocapix}
 \author{Par le BR 2013}
 \date{Avril 2015}
+\logo{logo}
 
 \begin{document}
 
@@ -236,6 +227,7 @@ Avant de pouvoir rentrer une appro dans Chocapix, il faut d'abord créer les ali
 Si tu crées un nouvel aliment vendu, tu devras aussi définir la taxe appliquée à cet aliment. La taxe couvre les vols ou oublis de log (il y en aura) et le prix des produits en open que propose ton bar d'étage. Il est par expérience conseillé de fixer cette taxe à 20 \% pour tous les produits, mais là encore c'est toi qui choisis.
 
 \paragraph{Aliments simples et packs} Il y a des aliments qui ne portent pas de code-barres ; tu peux quand même les ajouter, en laissant vide le champ du code-barres. Ces aliments ne seront néanmoins pas ajoutés à la base de données inter-bars. Par contre il y a des aliments vendus en packs qui eux portent un code-barres. Dans ce cas, tu dois rentrer le produit acheté comme unité d'abord puis entrer le code-barres du pack, sélectionner \menu{Il s'agit d'un pack} et remplir les champs comme il faut.
+
 
 \subsubsection{Rentrer une appro}
 
