@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[french]{babel}
+\usepackage[french,noconfigs]{babel}
 \usepackage{graphicx,csquotes,textcomp}
 \usepackage[titlepage,fancysections]{polytechnique}
 \usepackage{url,menukeys}%Menukeys c'est pour les séquences de menu et les touches de clavier.
@@ -12,7 +12,6 @@
 \title{InfoBar}
 \subtitle{Fonctionnement des bars d'étage\\Petit guide à l'utilisation de Chocapix}
 \author{Par le BR 2013}
-\date{Avril 2015}
 \logo{logo}
 
 \begin{document}
@@ -150,6 +149,8 @@ Tu peux aussi démarrer une bouffe à plusieurs en tapant « Ajouter » devant l
 \caption{Faire une bouffe à plusieurs}
 \end{figure}
 
+\paragraph{Menus} Si tu te retrouves à logguer périodiquement les mêmes aliments dans les mêmes quantités, tu peux créer un menu prédéfini pour aller plus vite. Il suffit d'aller sur \menu{Préférences>Mes menus>Créer}. Tu peux donner à ton menu un nom, et il te suffira de taper ce nom dans la Magic Bar\texttrademark{} pour le logguer en une seule fois.
+
 \subsection{Compte personnel}
 
 \paragraph{Situation personnelle} Tu peux voir tes données personnelles et ton historique de consommation en cliquant sur ton nom en haut à droite.
@@ -172,7 +173,35 @@ En cliquant sur le menu déroulant en dessous du nom de l'aliment, tu peux achet
 
 \paragraph{Changer de bar} En cliquant \menu{Changer de bar} à gauche, tu pourras accéder aux pages des autres bars d'étage, et y logguer des aliments si tu y possèdes un compte. \textbf{Attention} : tu possèdes un solde bar par bar d'étage, et non pas un solde unique pour tous les bars où tu es inscrit. En effet, l'argent qui est virtuellement sur ton solde bar est réellement sur le compte en banque du bar d'étage, donc on ne peut pas rassembler virtuellement l'argent qui est réellement sur plusieurs comptes en banque.
 
-\paragraph{Signaler un bug} En cliquant sur \menu{Signaler un bug}, tu peux envoyer un message à l'équipe de développement de Chocapix qui s'empressera de corriger l'erreur si jamais tu donnes des informations assez précises sur l'emplacement du bug. Utilise cette fonction pour que le site bar soit encore mieux !
+\paragraph{Signaler un bug} En cliquant sur \menu{Signaler un bug}, tu peux envoyer un message à l'équipe de développement de Chocapix qui s'empressera de corriger l'erreur si jamais tu donnes des informations assez précises sur la nature du bug. Utilise cette fonction pour que le site bar soit encore mieux !
+
+\subsection{Classements et statistiques}
+
+Au delà de l'historique des consommations du bar, Chocapix t'offre la possibilité de consulter énormément de statistiques sur la consommation de ton bar. Ainsi, sur la fiche d'un aliment, les onglets \menu{Graphiques} et \menu{Classements} te permettent de visualiser respectivement la consommation de l'aliment au cours du temps (ou en moyenne sur les heures de la journée, du mois, etc.) ou les personnes qui consomment le plus cet aliment. Les mêmes onglets sont présents sur les fiches des utilisateurs.
+
+\begin{figure}[h]
+	\includegraphics[width=16cm]{images/classements}
+	\caption{Classements généraux au sein d'un bar}
+\end{figure}
+
+Dans l'onglet \menu{Classements} de la barre de navigation à gauche, tu trouveras trois classements des utilisateurs de ton bar :
+\begin{itemize}
+	\item \emph{Meilleurs consommateurs ever} totalise la somme d'argent dépensé par les utilisateurs depuis l'ouverture du bar ;
+	\item \emph{Le dernier mois} totalise la somme d'argent dépensé par les utilisateurs depuis 30 jours ;
+	\item \emph{Les plus cohèzes} totalise la somme d'argent dépensée par les utilisateurs dans des bouffes à plusieurs.
+\end{itemize}
+
+\subsection{Astuces}
+
+\begin{enumerate}
+	\item On peut se déconnecter en appuyant deux fois sur la touche \keys{Echap}.
+	\item La MagicBar™ comprend les mots-clés : \texttt{acheter}, \texttt{ajouter} (à la bouffe à plusieurs), \texttt{créditer} (un compte), \texttt{amende}, \texttt{retirer} (de l'argent d'un compte), \texttt{donner}, \texttt{rembourser}. De plus il suffit d'écrire le début d'un mot-clé pour que la MagicBar™ comprenne.
+	\item Tu peux voir les horaires où quelqu'un consomme le plus en allant sur sa page, onglet \menu{Graphiques}, \menu{Type de graphique} : Moyenne, \menu{Date de début} : ouverture de ton bar.
+	\item La MagicBar™ comprend les expressions mathématiques (sans espaces) : \texttt{(500-187)/3 pâtes}.
+	\item Tu peux faire une bouffe à plusieurs sans jamais utiliser la souris : \texttt{aj 2 pizza}, \keys{Entrer}, \texttt{2 café}, \keys{Entrer}, \keys{Tab}, \texttt{nom-de-la-personne}, \keys{Entrer}, \keys{Tab}, \keys{Entrer}.
+	\item Tu peux facilement modifier les quantités d'un menu en ajoutant celui-ci à la bouffe à plusieurs : \texttt{aj nom-du-menu}.
+\end{enumerate}
+
 
 
 \section{Chocapix : côté respo bar}
@@ -259,6 +288,8 @@ Dans l'onglet \menu{Stocks}, tu peux modifier les quantités et les prix des dif
 
 \paragraph{Regrouper des articles} Dans \menu{Administration>Aliment>Regrouper des articles}, tu peux fusionner deux aliments vendus par le bar en un seul : cela regroupera les produits achetés correspondants. Pour enlever un produit acheté d'un aliment vendu, c'est \menu{Aliments>(Nom de l'aliment)>Sotcks>Retirer}. Pour ajouter un produit acheté à un aliment vendu, c'est \menu{Administration>Aliments>Ajouter un nouvel aliment>Rattacher à un aliment déjà vendu}.
 
+\subsubsection{Estimation de la prochaine appro}
+
 \subsection{Respo inventaire}
 
 Pour que les quantités affichées sur Chocapix soient reliées à la réalité et te rendre compte de l'ampleur des vols, il te faudra régulièrement (une fois par mois environ) faire un inventaire de tout ce que contient ton bar. Fais-le la veille d'une appro, il y a moins de boulot à faire.
@@ -266,6 +297,12 @@ Pour que les quantités affichées sur Chocapix soient reliées à la réalité 
 Pour cela, va dans \menu{Administration>Aliments>Faire un inventaire} et rentre un à un les produits achetés présents dans ton bar d'étage en scannant leur code-barres ou en recherchant leur nom.
 
 Tu as aussi accès à \menu{Administration>Aliments>Ajouter une aliment}, au cas où il y aurait un aliment non répertorié dans ton inventaire. Regarde la section \ref{ajout} pour savoir comment faire.
+
+\paragraph{Méthodologie} Voilà comment utiliser Chocapix pour effectuer un inventaire complet de ton bar (nécessaire pour connaître l'état exact des finances).
+\begin{enumerate}
+	\item Prend un à un les produits présents physiquement dans ton bar d'étage et ajoute leur quantité à l'inventaire en scannant leur code barre ou en les recherchant dans la liste des aliments présente sur l'encart de droite de la page d'inventaire.
+	\item Il faut maintenant signifier qu'il ne reste aucun autre aliment autre que ceux que tu viens d'entrer dans le bar. Pour cela, clique sur le bouton \menu{Épuisé} de tous les aliments restants dans l'encart de droite.
+\end{enumerate}
 
 \subsection{Respo news}
 
@@ -275,7 +312,7 @@ Le respo news est chargé de la communication des respos bars aux autre membres 
 
 \paragraph{Actualités} Une actualité est un petit texte avec un titre qui est affiché sur la page d'accueil de ton bar d'étage sur Chocapix. Ces messages peuvent être très divers : annonce du respo propreté, d'une appro spéciale, d'un repas section, etc. Pour ajouter une annonce, c'est \menu{Administration>Actualités>Ajouter une news}. Pour afficher toutes les news ou les modifier, c'est \menu{Administration>Actualités>Lister les news}. Tu peux notamment faire remonter une news pour qu'elle s'affiche en premier.
 
-Les news publiées ou modifiées depuis moins d'un jour sont affichées en bleu sur la page d'accueil, elles deviennent ensuite blanches.
+Les news publiées ou modifiées depuis moins d'un jour sont affichées en bleu sur la page d'accueil, elles deviennent ensuite blanches. Tu peux utiliser des balises HTML standard pour mettre en forme ta news : \texttt{<em>blabla</em>} pour l'italique, \texttt{<b>blabla</bla>} pour le gras, \texttt{<a href="http://bidule.com">texte du lien</a>} pour un lien.
 
 \subsection{Trézobar}
 
